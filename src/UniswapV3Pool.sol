@@ -148,9 +148,8 @@ contract UniswapV3Pool{
             );
 
         
-        console.log("beforetickflip",flippedLower,flippedupper);
-        int24 ticksp = int24(tickSpacing);
-        console.log(tickSpacing);
+        
+        
        
         if(flippedLower){
              tickBitmap.flipTick(params.lowerTick,int24(tickSpacing));                   

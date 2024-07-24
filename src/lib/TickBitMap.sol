@@ -3,7 +3,7 @@
 pragma solidity 0.8.24;
 import { console} from "forge-std/Test.sol";
 import {BitMath} from "./BitMath.sol";
-import {Test, console} from "forge-std/Test.sol";
+
 
 library TickBitMap{
 
@@ -22,8 +22,7 @@ library TickBitMap{
     int24 tickSpacing
     ) internal  {
         
-        console.log("insidefliptickreqzrero",tick % tickSpacing == 0);
-        console.log("tick tickspacing",uint256(int256(tick)),uint256(int256(tickSpacing)));
+        
         require(tick % tickSpacing == 0); // ensure that the tick is spaced
         (int16 wordPos, uint8 bitPos) = position(tick / tickSpacing);
         uint256 mask = (1 << bitPos);

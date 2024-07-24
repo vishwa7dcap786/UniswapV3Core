@@ -8,7 +8,7 @@ import "../src/lib/PRBMath.sol";
 import {TickMath} from "../src/lib/TickMath.sol";
 
 
-//import {Counter} from "../src/Counter.sol";
+
 
 contract MathTest is Test {
    //Counter public counter;
@@ -72,20 +72,6 @@ contract MathTest is Test {
         }
     }
 
-    //  function testsqrt() public  {
-    //     int128 value = Math.sqrt(int128(5000));
-    //     int64 word = int64(value >> 6);
-    //     console.log(uint128(value));
-    //     console.log(uint64(word));
-
-    //     console.log(uint256(5000 << 64));
-
-    // }
-
-    //  function testsqrtx96() public  {
-    //     uint256 value = Math.sqrtx96(5000);
-    //     console.log(value);
-    // }
     
     
     function testMinLiquidity() public  {
@@ -165,16 +151,7 @@ contract MathTest is Test {
 
     }
     
-    //  function testCalculateamount0() public  {
-    //     int128 value = Math.calcAmount0Delta(5341294542274603406682713227264,5602277097478614198912276234240,);
-    //     int64 word = int64(value >> 6);
-    //     console.log(uint128(value));
-    //     console.log(uint64(word));
-
-    //     console.log(uint256(5000 << 64));
-
-    // }
-
+    
 }
 
 
