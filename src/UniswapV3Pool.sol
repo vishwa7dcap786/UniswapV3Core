@@ -1,7 +1,7 @@
 //SPDX-Lisence_identifier:MIT
 
 pragma solidity 0.8.24;
-import { console} from "forge-std/Test.sol";
+
 import {Tick} from "./lib/Tick.sol";
 import {Position} from "./lib/Position.sol";
 import {console} from "forge-std/Test.sol";
@@ -14,7 +14,7 @@ import {TickBitMap} from "./lib/TickBitMap.sol";
 import {TickMath} from "./lib/TickMath.sol";
 import {Math} from "./lib/Math.sol";
 import {SwapMath} from "./lib/SwapMath.sol";
-//import {UniswapMintCallBack} from "./UniswapMintCallBack.sol";
+
 contract UniswapV3Pool{
     using Tick for mapping(int24 => Tick.Info);
     using Position for mapping(bytes32 => Position.Info);
@@ -181,7 +181,7 @@ contract UniswapV3Pool{
          //  console.log(getter(owner,lowerTick,upperTick));
          
         position.update(params.liquidityDelta,feeGrouthInside0X120,feeGrouthInside1X120);
-         //    console.log();
+       
      
         if(_slot0.tick < params.lowerTick){
 
