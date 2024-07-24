@@ -1,6 +1,18 @@
 [profile.default]
 src = "src"
 out = "out"
+#viaIR = true
 libs = ["lib"]
 
+
+[rpc_endpoints]
+sepolia = "${https://eth-sepolia.g.alchemy.com/v2/s9ijM9GJ7CwHrk6kUNu6qGCbH_RDh724}"
+
+[etherscan]
+sepolia = { key = "${5D27T74NP6CGA22HFYZ3EYR1B1WFB4ZDXA}" }
+
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+# forge script --chain sepolia script/Counter.s.sol:InteractScript  --private-key c096607f604bec8ecb4b0702ea980d215a4e22c6e005c1439b5f5605434e7e3e --api-key 5D27T74NP6CGA22HFYZ3EYR1B1WFB4ZDXA  $SEPOLIA_RPC_URL --broadcast  -vvvv
+# source .env
